@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<component name="fr.toutatice.ecm.fulltext.querymaker.test"
+  version="1.0.0">
+  
+  <require>org.nuxeo.ecm.core.storage.sql.jdbc.QueryMakerService</require>
+
+  <extension
+	target="org.nuxeo.ecm.core.storage.sql.jdbc.QueryMakerService"
+	point="queryMaker">
+    <queryMaker name="TTC_FULLTEXT">fr.toutatice.ecm.fulltext.FulltextQueryMaker
+    </queryMaker>
+  </extension>
+
+</component>

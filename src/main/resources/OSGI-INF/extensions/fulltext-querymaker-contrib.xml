@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="org.opentoutatice.fulltext.reindex.querymaker"
+  version="1.0.0">
+
+  <extension target="org.nuxeo.ecm.core.storage.sql.jdbc.QueryMakerService"
+    point="queryMaker">
+    <queryMaker name="TTC_FULLTEXT">org.opentoutatice.fulltext.reindex.query.FulltextQueryMaker
+    </queryMaker>
+  </extension>
+
+</component>
